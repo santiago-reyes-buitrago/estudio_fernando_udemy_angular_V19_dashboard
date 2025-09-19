@@ -1,1 +1,11 @@
-<p>defer-views works!</p>
+@defer() {
+  <app-title title="Defer Views"/>
+  <section class="grid grid-cols-1">
+
+    <heavy-loaders-slow cssClass="bg-blue-500"/>
+  </section>
+} @placeholder {
+  <p>
+    Cargando......
+  </p>
+}
