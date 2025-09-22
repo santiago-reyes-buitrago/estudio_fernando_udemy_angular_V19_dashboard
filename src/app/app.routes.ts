@@ -26,6 +26,21 @@ export const routes: Routes = [
         loadComponent: () => import('./dashboard/pages/defer-options/defer-options'),
       },
       {
+        title: 'User List',
+        path: 'user-list',
+        loadComponent: () => import('./dashboard/pages/user/user'),
+      },
+      {
+        title: 'View Transition - 1',
+        path: 'view-transition1',
+        loadComponent: () => import('./dashboard/pages/view-transitions/view-transitions1'),
+      },
+      {
+        title: 'View Transition - 2',
+        path: 'view-transition2',
+        loadComponent: () => import('./dashboard/pages/view-transitions/view-transitions2'),
+      },
+      {
         path: '**', redirectTo: 'change-detection', pathMatch: 'full'
       }
     ]
