@@ -5,7 +5,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@services/*": ["src/services/*"]
+      "@services/*": ["src/app/services/*"]
     },
     "strict": true,
     "noImplicitOverride": true,

@@ -15,6 +15,13 @@ export class SideMenu {
   public menuItems = routes
     .map(route => route.children ?? [])
     .flat()
-    .filter(route => route && !route.redirectTo);
+    .filter(route => route && !route.redirectTo)
+    .filter((route) => !route.path?.includes(':'));
+
+  constructor() {
+    console.log('SideMenu',this.menuItems);
+
+  }
+
 
 }
